@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clinica Olho de Tandera</title>
+    <title>C</title>
     <link rel="stylesheet" href="base.css">
 </head>
 <style>html, body {
@@ -35,17 +35,18 @@ body {
     text-align: center;
 }
 .header {
-    background-color:#f1f1f1;
+    background-color: rgb(5, 108, 108);
     min-height: 150px;
 }
 .content {
-    background-color:#f1f1f1;
+    background-color: #f1f1f1;
     min-height: 300px;
     padding: 20px;
-    font-size: 150%;
-    
 }
 .footer {
+    background-color:#f1f1f1 ;
+    min-height: 150px;
+    footer {
     background-color:#f1f1f1;
     min-height: 150px;
     background-color: #004080;
@@ -56,21 +57,44 @@ body {
     font-size: 14px;
     font-weight: bold;
 }
-.menu {
-    width: 15%;
-    background-color:lightgray;
-    padding: 10px 20px 0px;
-    padding: 15px 0;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
     text-align: center;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column; /* Alinha os itens um abaixo do outro */
-    align-items: center; /* Centraliza os itens */
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #004080;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+    transition: 0.3s;
+}
+h2{
+    text-align: center;
+    font-size:larger;
+}
+
+menu{
+    background-color: #004080;
+    padding: 15px 0;
+    text-align: center;
 }
 
 ul {
@@ -99,7 +123,7 @@ ul li a:hover {
 
 /* Responsividade */
 @media (max-width: 768px) {
-ul {
+    ul {
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -112,8 +136,8 @@ ul li {
 
 </style>
 
-
 </style>
+
 <body>
     <div class="wrapper">
         <div class="menu">
@@ -128,17 +152,53 @@ ul li {
 
         <div class="main">
             <div class="header">
-            <img src="banner1.jpg" alt="" height="auto" width="100%">
+            <img src="horario.jpeg" alt="" height="auto" width="100%">
                 <!-- Aqui vai o seu header -->
             </div>
     
             <div class="content">
-                <h<h2>Bem-vindo à Clínica Oftalmológica Olho de Tandera</h2>
-                <p>
-                    Sua <u>visão</u> é a nossa prioridade! Na <strong>Clínica Olho de Tandera</strong>, unimos tecnologia de ponta, profissionais altamente qualificados e um atendimento humanizado para garantir o melhor cuidado para seus olhos.  
-                    Agende sua consulta e enxergue a vida com mais clareza e saúde!
-                </p>
-                
+                <h2>Horário de Atendimento</h2>
+        <p>Confira nossos horários de atendimento para cada especialidade:</p>
+        
+        <table>
+    <thead>
+        <tr>
+            <th>Serviços</th>
+            <th>Segunda a Sexta</th>
+            <th>Sábado</th>
+            <th>Feriado</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Clínico Geral</td>
+            <td>8h - 19h</td>
+            <td>8h - 14h</td>
+            <td>8h - 14h</td>
+        </tr>
+        <tr>
+            <td>Psicologia</td>
+            <td>8h - 19h</td>
+            <td>8h - 14h</td>
+            <td>8h - 14h</td>
+        </tr>
+        <tr>
+            <td>Pediatria</td>
+            <td>8h - 19h</td>
+            <td>8h - 18h</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Oftalmologia</td>
+            <td>8h - 19h</td>
+            <td>8h - 18h</td>
+            <td>-</td>
+        </tr>
+    </tbody>
+</table>
+
+
+                <!-- Aqui vai o seu conteúdo -->
             </div>
     
             <div class="footer">

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template - Utilizar como modelo</title>
+    <link rel="stylesheet" href="base.css">
+</head>
+<style>html, body {
+    margin: 0;
+}
+body {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    background-color:#f1f1f1;
+}
+.main {
+    display: flex;
+    flex-flow: column;
+    width: 85%;
+}
+.menu {
+    width: 15%;
+    background-color:lightgray;
+    padding: 10px 20px 0px;
+    padding: 15px 0;
+    text-align: center;
+}
+.header {
+    background-color: rgb(5, 108, 108);
+    min-height: 150px;
+}
+.content {
+    background-color: white;
+    min-height: 300px;
+    padding: 20px;
+}
+.footer {
+    background-color: #f1f1f1;
+    min-height: 150px;
+    background-color:#f1f1f1;
+    min-height: 150px;
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+    font-weight: bold;
+}
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form textarea {
+    height: 100px;
+    resize: none;
+}
+
+form button {
+    width: 48%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background: #28a745;
+    color: white;
+}
+
+button[type="reset"] {
+    background: #dc3545;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+menu{
+    background-color: #004080;
+    padding: 15px 0;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+    padding: 10px;
+}
+
+ul li a:hover {
+    color: #FFD700; /* Dourado ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+ul li {
+        margin: 10px 0;
+    }
+}
+
+</style>
+
+
+</style>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <!-- Aqui vai o seu menu -->
+            <ul>
+                <li><a href="index.html">Página Principal</a></li>
+                <li><a href="sobre.html">Sobre a Clínica</a></li>
+                <li><a href="horarios.html">Horário de Atendimento</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+            <img src="contato.png" alt="" height="auto" width="100%">
+                <!-- Aqui vai o seu header -->
+            </div>
+    
+            <div class="content">
+                <h1>Nossos Contatos.</h1>
+                <p>Aqui, sua saúde é nossa prioridade! Somos uma clínica moderna, equipada com tecnologia de ponta e uma equipe altamente qualificada para oferecer o melhor atendimento. Nossa missão é proporcionar qualidade de vida e bem-estar aos nossos pacientes, garantindo diagnósticos precisos e tratamentos eficazes.
+
+                    Seja para consultas de rotina, exames especializados ou procedimentos médicos, estamos prontos para cuidar de você com excelência e dedicação.</p> <br>
+                    
+                    <p>📅 Agende sua consulta e venha conhecer nossos serviços!</p>
+    <p>📍 Endereço: Rua dos Thundercats, 101 - Vila Felina, RJ</p>
+    <p>📞 Contato: (21) 99999-9999 <br>
+    <p>📞Whatsapp: (21)99999-9999</p>
+    <p>✉ contato@olhodetandera.com</p>
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d229.70039732740622!2d-43.1863103204332!3d-22.90575830354843!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1738750038426!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" frameborder="0"></iframe><br>
+
+    <form action="contatos">
+    
+    Nome: <input type="text"><br>
+    E-mail: <input type="email"><br>
+    Assunto: <input type="text"><br>
+    Mensagens: <textarea name="Mensagens" id="comments"></textarea>
+<button type="submit">Enviar</button> <button type="reset">Resetar</button>
+
+</form>
+
+
+                <!-- Aqui vai o seu conteúdo -->
+            </div>
+    
+            <div class="footer">
+                <footer>
+                    <p>📍 Endereço: Rua dos Thundercats, 101 - Vila Felina, RJ</p>
+                    <p>📞 Contato: (21) 99999-9999 | ✉ contato@olhodetandera.com</p>
+                    <p>&copy; 2025 Clínica Olho de Tandera - Todos os direitos reservados.</p>
+                </footer>
+                <!-- Aqui vai o seu rodapé -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
